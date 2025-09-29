@@ -26,9 +26,9 @@ if st.button("Calcular Score"):
                             "BasePolicy": [campo3],
                             "Fault": [campo4]
                   })
-    st.write(cliente)
+    #st.write(cliente)
     calificacion_df = sc.scorecard_ply(cliente, card, print_step=0, only_total_score=False)
-    st.write(calificacion_df)
+    #st.write(calificacion_df)
     score = calificacion_df["score"].iloc[0]
 
     # --- Mostrar resultado en tamaño grande ---
